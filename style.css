@@ -1,0 +1,28 @@
+.box {
+    width: 400px;
+    height: 300px;
+    background: burlywood;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    position: absolute;
+    width: 50px;
+}
+
+.hidden{
+    animation: disparition 1s;
+    animation-fill-mode: forwards; 
+}
+@keyframes disparition {
+    100%{
+        opacity: 0;
+        display: none;
+    }
+} 
